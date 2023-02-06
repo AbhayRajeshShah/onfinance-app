@@ -11,8 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const Scaffold(body: Home(), backgroundColor: Colors.black),
-      theme: ThemeData.dark(),
+      home: Scaffold(
+          body: Builder(builder: (context) {
+            return const Home();
+          }),
+          backgroundColor: Colors.black),
+      theme:
+          ThemeData(brightness: Brightness.dark, fontFamily: 'SF Pro Display'),
     );
   }
 }

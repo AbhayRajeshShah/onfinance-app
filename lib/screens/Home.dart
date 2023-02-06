@@ -360,7 +360,8 @@ class _HomeState extends State<Home> {
                           ),
                           child: const Text(
                             'HISTORICAL YIELD',
-                            style: TextStyle(fontSize: 16),
+                            style: TextStyle(
+                                fontSize: 16, fontFamily: 'Times New Roman'),
                             textAlign: TextAlign.center,
                           ),
                         ),
